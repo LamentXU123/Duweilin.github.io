@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Parameters Example</title>
+</head>
+<body>
+<h1>Get Parameters Example</h1>
+
+<script>
+// 获取当前页面 URL 中的查询参数部分
+var queryString = window.location.search;
+
+// 解析查询参数
+var params = new URLSearchParams(queryString);
+
+// 获取名为 "report" 的参数值
+var report = params.get('cookie');
+
+// 输出参数值到控制台
+console.log('Report:', report);
+</script>
+
+</body>
+</html>
